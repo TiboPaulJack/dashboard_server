@@ -2,8 +2,7 @@ const { Pool: Client } = require('pg');
 require("dotenv").config();
 
 const client = new Client({
-    connectionString: process.env.PG_URL,
-    URL: process.env.PG_URL,
+    connectionString: process.env.DATABASE_URL,
     /* user: process.env.DB_USER,
     host: process.env.DB_HOST,
     database: process.env.DB_NAME,
